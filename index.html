@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/alexveskos.css">
 </head>
-<body>
+<body class="theme-dark">
 <div id="website-content">
 
     <!-- ── NAVBAR ── -->
@@ -18,13 +18,14 @@
         <div class="pf-inner pf-nav-inner">
             <ul class="pf-nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <div class="pf-theme-toggle">
-            <span class="pf-active">Active: <span class="pf-mode">Light Mode</span></span>
-            <div class="pf-toggle toggle-light"></div>
+            <span class="pf-active">Active: <span class="pf-mode">Dark Mode</span></span>
+            <div class="pf-toggle toggle-dark"></div>
         </div>
     </nav>
 
@@ -41,97 +42,6 @@
             </div>
         </div>
 
-      </div><!-- /.pf-inner -->
-    </section>
-
-    <!-- ── PROJECTS ── -->
-    <section id="projects">
-      <div class="pf-inner">
-        <div class="projects-header">
-            <div>
-                <div class="section-eyebrow">Selected Work</div>
-                <h2 class="section-title">Projects</h2>
-            </div>
-        </div>
-
-        <div class="projects-grid">
-
-            <!-- Traffiq.gr Web Platform -->
-            <a href="traffiq-platform.html" class="project-card" target="_blank" rel="noopener">
-                <div class="pc-img">
-                    <i class="fas fa-globe"></i>
-                </div>
-                <div class="pc-body">
-                    <h3>Traffiq.gr — Web Platform</h3>
-                    <p>Designed and built the whole Traffiq platform end-to-end — the public site, secure
-                      sign-up &amp; login authentication, a member area with personalised data dashboards,
-                      and an admin panel for managing the underlying survey data.</p>
-                </div>
-            </a>
-
-            <!-- Civil & Traffic Engineering -->
-            <a href="civilandtrafficengineering.html" class="project-card" target="_blank" rel="noopener">
-                <div class="pc-img">
-                    <i class="fas fa-drafting-compass"></i>
-                </div>
-                <div class="pc-body">
-                    <h3>Civil &amp; Traffic Engineering</h3>
-                    <p>Highway design, Junction design, traffic impact assessments, public realm, road safety audits, and scheme development for 
-                      municipalities across the UK.</p>
-                </div>
-            </a>
-
-            <!-- Video Analysis -->
-            <a href="videoupload.html" class="project-card" target="_blank" rel="noopener">
-                <div class="pc-img">
-                    <i class="fas fa-video"></i>
-                </div>
-                <div class="pc-body">
-                    <h3>Video Upload &amp; Analysis</h3>
-                    <p>A platform for uploading survey footage and running automated vehicle classification 
-                      and count extraction — reducing manual processing time significantly.</p>
-                </div>
-            </a>
-
-            <!-- Historical Survey Data Map -->
-            <a href="historicalmap.html" class="project-card" target="_blank" rel="noopener">
-                <div class="pc-img">
-                    <i class="fas fa-map-marked-alt"></i>
-                </div>
-                <div class="pc-body">
-                    <h3>Historical Survey Data Map</h3>
-                    <p>An interactive Leaflet map displaying all historical traffic surveys across Greece, 
-                      with filters by type, classification, and date range, behind a Firebase Auth access layer.</p>
-                </div>
-            </a>
-
-            <!-- Power Apps -->
-            <a href="riskassessment-app.html" class="project-card" target="_blank" rel="noopener">
-                <div class="pc-img">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <div class="pc-body">
-                    <h3>Risk Assessment — Desktop &amp; Mobile App</h3>
-                    <p>Custom Microsoft Power Apps application for logging site attendance and assessing on-site risks. 
-                      </p>
-                </div>
-            </a>
-
-            <!-- VBA Excel Tools -->
-            <a href="excel-automation-app.html" class="project-card" target="_blank" rel="noopener">
-                <div class="pc-img">
-                    <i class="fas fa-file-excel"></i>
-                </div>
-                <div class="pc-body">
-                    <h3>Excel Automation &amp; Macro Development</h3>
-                    <p>A collection of VBA-powered Excel tools built to automate engineering workflows — 
-                      including a Drawing &amp; Document Register, data entry templates, reporting macros, 
-                      and quality-checking tools developed for use in highways design environments. 
-                      Examples coming soon.</p>
-                </div>
-            </a>
-
-        </div>
       </div><!-- /.pf-inner -->
     </section>
 
@@ -155,11 +65,17 @@
             <div class="about-skills-col">
                 <div class="skills-block">
                     <div class="skills-cat-title">Programming Languages</div>
+                    <div class="traffic-spinner-neo exp-spin" aria-hidden="true">
+                        <svg viewBox="0 0 120 120" class="neo-svg">
+                            <circle cx="60" cy="60" r="52" fill="none" stroke="var(--neo-lane)" stroke-width="7" stroke-dasharray="10 16" stroke-linecap="round" class="lane-flow"/>
+                            <g class="orbit orbit-a"><circle cx="60" cy="9" r="9" fill="var(--neo-dot)"/></g>
+                            <g class="sweep"><path d="M60,60 L60,14 A46,46 0 0,1 106,60 Z" fill="var(--neo-accent)" fill-opacity="0.35"/></g>
+                        </svg>
+                    </div>
                     <div class="skills-cat-grid skills-cat-grid--lg-icons skills-cat-grid--square">
-                        <div class="skill-card"><img class="skill-icon-img skill-icon-img--rounded" src="images/javascript_logo.png" alt="JavaScript"><span>JavaScript</span></div>
-                        <div class="skill-card"><i class="fa-brands fa-python" style="color:#3776ab"></i><span>Python</span></div>
-                        <div class="skill-card"><i class="fa-brands fa-php" style="color:#777bb4"></i><span>PHP</span></div>
-                        <div class="skill-card"><img class="skill-icon-img" src="images/excel_logo.svg" alt="Excel" style="width:42px;height:42px;"><span>VBA Excel</span></div>
+                        <div class="skill-card"><img class="skill-icon-img skill-icon-img--rounded" src="images/javascript_logo.png" alt="JavaScript"><span class="skill-swap"><span class="skill-swap-name">JavaScript</span><span class="skill-swap-loading" aria-hidden="true">Loading</span></span></div>
+                        <div class="skill-card"><i class="fa-brands fa-python" style="color:#3776ab"></i><span class="skill-swap"><span class="skill-swap-name">Python</span><span class="skill-swap-loading" aria-hidden="true">Loading</span></span></div>
+                        <div class="skill-card"><i class="fa-brands fa-php" style="color:#777bb4"></i><span class="skill-swap"><span class="skill-swap-name">PHP</span><span class="skill-swap-loading" aria-hidden="true">Loading</span></span></div>
                     </div>
                 </div>
 
@@ -188,25 +104,25 @@
                     <div class="skills-cat-grid skills-cat-grid--square">
                         <div class="skill-card"><img class="skill-icon-img" src="https://cdn.simpleicons.org/autocad" alt="AutoCAD"><span>AutoCAD</span></div>
                         <div class="skill-card"><img class="skill-icon-img skill-icon-img--invert-dark" src="https://cdn.simpleicons.org/autodesk" alt="Civil3D (Autodesk)"><span>Civil3D</span></div>
-                        <div class="skill-card"><i class="fa-solid fa-route" style="color:#61cae4"></i><span>OpenRoads</span></div>
-                        <div class="skill-card"><i class="fa-solid fa-folder-tree" style="color:#61cae4"></i><span>ProjectWise</span></div>
+                        <div class="skill-card"><i class="fa-solid fa-route" style="color:#999"></i><span>OpenRoads</span></div>
+                        <div class="skill-card"><i class="fa-solid fa-folder-tree" style="color:#999"></i><span>ProjectWise</span></div>
                         <div class="skill-card"><img class="skill-icon-img" src="images/paramics_icon.png" alt="Paramics" style="width:17px;height:17px;"><span>Paramics</span></div>
-                        <div class="skill-card"><i class="fa-solid fa-circle-nodes" style="color:#61cae4"></i><span>SATURN</span></div>
-                        <div class="skill-card"><i class="fa-solid fa-traffic-light" style="color:#61cae4"></i><span>TRANSYT</span></div>
-                        <div class="skill-card"><i class="fa-solid fa-sliders" style="color:#61cae4"></i><span>LINSIG</span></div>
+                        <div class="skill-card"><i class="fa-solid fa-circle-nodes" style="color:#999"></i><span>SATURN</span></div>
+                        <div class="skill-card"><i class="fa-solid fa-traffic-light" style="color:#999"></i><span>TRANSYT</span></div>
+                        <div class="skill-card"><i class="fa-solid fa-sliders" style="color:#999"></i><span>LINSIG</span></div>
                     </div>
                 </div>
 
                 <div class="skills-block">
                     <div class="skills-cat-title">Civil, Highways &amp; Traffic Engineering</div>
                     <div class="skills-cat-grid skills-cat-grid--square">
-                        <div class="skill-card"><i class="fa-solid fa-diagram-project" style="color:#61cae4"></i><span>Project Management</span></div>
-                        <div class="skill-card"><i class="fa-solid fa-user-tie" style="color:#61cae4"></i><span>Supervision</span></div>
-                        <div class="skill-card"><i class="fa-solid fa-road" style="color:#61cae4"></i><span>Highway &amp; Junction Design</span></div>
-                        <div class="skill-card"><i class="fa-solid fa-clipboard-list" style="color:#61cae4"></i><span>Traffic Impact Assessments</span></div>
-                        <div class="skill-card"><i class="fa-solid fa-shield-halved" style="color:#61cae4"></i><span>Road Safety Audits</span></div>
-                        <div class="skill-card"><i class="fa-solid fa-chart-line" style="color:#61cae4"></i><span>Traffic Surveys &amp; Data Analysis</span></div>
-                        <div class="skill-card"><i class="fa-solid fa-cubes" style="color:#61cae4"></i><span>Transport Modelling</span></div>
+                        <div class="skill-card"><i class="fa-solid fa-diagram-project" style="color:#999"></i><span>Project Management</span></div>
+                        <div class="skill-card"><i class="fa-solid fa-user-tie" style="color:#999"></i><span>Supervision</span></div>
+                        <div class="skill-card"><i class="fa-solid fa-road" style="color:#999"></i><span>Highway &amp; Junction Design</span></div>
+                        <div class="skill-card"><i class="fa-solid fa-clipboard-list" style="color:#999"></i><span>Traffic Impact Assessments</span></div>
+                        <div class="skill-card"><i class="fa-solid fa-shield-halved" style="color:#999"></i><span>Road Safety Audits</span></div>
+                        <div class="skill-card"><i class="fa-solid fa-chart-line" style="color:#999"></i><span>Traffic Surveys &amp; Data Analysis</span></div>
+                        <div class="skill-card"><i class="fa-solid fa-cubes" style="color:#999"></i><span>Transport Modelling</span></div>
                     </div>
                 </div>
 
@@ -252,7 +168,165 @@
                         <div class="exp-org"><a href="https://www.egnatia.eu" target="_blank" rel="noopener" class="exp-org-link">EGNATIA ODOS A.E.</a> · Thessaloniki</div>
                     </div>
                 </div>
+
+                <div class="skill-group-label" style="margin:40px 0 24px;">Education</div>
+                <div class="exp-timeline">
+                    <div class="exp-item">
+                        <div class="exp-period">2026 — Ongoing
+                            <div class="traffic-spinner-neo exp-spin" aria-hidden="true">
+                                <svg viewBox="0 0 120 120" class="neo-svg">
+                                    <circle cx="60" cy="60" r="52" fill="none" stroke="var(--neo-lane)" stroke-width="7" stroke-dasharray="10 16" stroke-linecap="round" class="lane-flow"/>
+                                    <g class="orbit orbit-a"><circle cx="60" cy="9" r="9" fill="var(--neo-dot)"/></g>
+                                    <g class="sweep"><path d="M60,60 L60,14 A46,46 0 0,1 106,60 Z" fill="var(--neo-accent)" fill-opacity="0.35"/></g>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="exp-role">MSc Web Intelligence</div>
+                        <div class="exp-org" style="margin-bottom:1px;"><span class="exp-org-link">Department of Information and Electronic Engineering</span></div>
+                        <div class="exp-org"><a href="https://www.ihu.gr/" target="_blank" rel="noopener" class="exp-org-link">International Hellenic University</a> · Thes/niki, GR</div>
+                    </div>
+                    <div class="exp-item">
+                        <div class="exp-period">2014</div>
+                        <div class="exp-role">MSc Transport Planning &amp; Engineering</div>
+                        <div class="exp-org"><a href="https://www.napier.ac.uk/" target="_blank" rel="noopener" class="exp-org-link">Edinburgh Napier University</a> · Edinburgh, UK</div>
+                    </div>
+                    <div class="exp-item">
+                        <div class="exp-period">2011</div>
+                        <div class="exp-role">BEng (Hons) Civil Infrastructure Engineer</div>
+                        <div class="exp-org"><span class="exp-org-link">Alexander Technological Educational Institute of Thessaloniki</span> · Thessaloniki, GR</div>
+                    </div>
+                </div>
             </div>
+        </div>
+      </div><!-- /.pf-inner -->
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section id="projects">
+      <div class="pf-inner">
+        <div class="projects-header">
+            <div>
+                <div class="section-eyebrow">Selected Work</div>
+                <h2 class="section-title">Projects</h2>
+            </div>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Traffiq.gr Web Platform -->
+            <div class="project-card" role="button" tabindex="0" aria-haspopup="dialog" data-project="traffiq-platform">
+                <div class="pc-img">
+                    <img class="pc-shot" src="images/project_images/traffiq-platform/traffiq_webpage.png" alt="Traffiq.gr home page" loading="lazy">
+                </div>
+                <div class="pc-body">
+                    <h3>Traffiq.gr — Web Platform</h3>
+                    <p>Designed and built the whole Traffiq platform end-to-end — the public site, secure
+                      sign-up &amp; login authentication, a member area with personalised data dashboards,
+                      and an admin panel for managing the underlying survey data.</p>
+                </div>
+            </div>
+
+            <!-- Civil & Traffic Engineering -->
+            <div class="project-card" role="button" tabindex="0" aria-haspopup="dialog" data-project="civil-traffic-engineering">
+                <div class="pc-img">
+                    <i class="fas fa-drafting-compass"></i>
+                </div>
+                <div class="pc-body">
+                    <h3>Civil &amp; Traffic Engineering</h3>
+                    <p>Highway design, Junction design, traffic impact assessments, public realm, road safety audits, and scheme development for 
+                      municipalities across the UK.</p>
+                </div>
+            </div>
+
+            <!-- Video Analysis -->
+            <div class="project-card" role="button" tabindex="0" aria-haspopup="dialog" data-project="video-analysis">
+                <div class="pc-img">
+                    <div class="pc-loading">
+                        <div class="traffic-spinner-neo pc-spin" aria-hidden="true">
+                            <svg viewBox="0 0 120 120" class="neo-svg">
+                                <circle cx="60" cy="60" r="54" fill="none" stroke="var(--neo-accent)" stroke-width="2.5" stroke-opacity="0.35"/>
+                                <circle cx="60" cy="60" r="44" fill="none" stroke="var(--neo-lane)" stroke-width="3.5" stroke-dasharray="6 12" stroke-linecap="round" class="lane-flow"/>
+                                <g class="orbit orbit-a"><circle cx="60" cy="6" r="5" fill="var(--neo-dot)"/></g>
+                                <g class="orbit orbit-b"><circle cx="60" cy="6" r="4" fill="var(--neo-dot-2)"/></g>
+                                <g class="orbit orbit-c"><circle cx="60" cy="6" r="4" fill="var(--neo-dot-3)"/></g>
+                                <g class="sweep"><path d="M60,60 L60,16 A44,44 0 0,1 104,60 Z" fill="var(--neo-accent)" fill-opacity="0.3"/></g>
+                            </svg>
+                        </div>
+                        <span class="pc-loading-label">Loading</span>
+                    </div>
+                </div>
+                <div class="pc-body">
+                    <h3>Video Upload &amp; Analysis</h3>
+                    <p>A platform for uploading survey footage and running automated vehicle classification 
+                      and count extraction — reducing manual processing time significantly.</p>
+                </div>
+            </div>
+
+            <!-- Historical Survey Data Map -->
+            <div class="project-card" role="button" tabindex="0" aria-haspopup="dialog" data-project="historical-map">
+                <div class="pc-img">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <div class="pc-body">
+                    <h3>Historical Survey Data Map</h3>
+                    <p>An interactive Leaflet map displaying all historical traffic surveys across Greece, 
+                      with filters by type, classification, and date range, behind a Firebase Auth access layer.</p>
+                </div>
+            </div>
+
+            <!-- Power Apps -->
+            <div class="project-card" role="button" tabindex="0" aria-haspopup="dialog" data-project="risk-assessment">
+                <div class="pc-img">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="pc-body">
+                    <h3>Risk Assessment — Desktop &amp; Mobile App</h3>
+                    <p>Custom Microsoft Power Apps application for logging site attendance and assessing on-site risks. 
+                      </p>
+                </div>
+            </div>
+
+            <!-- VBA Excel Tools -->
+            <div class="project-card" role="button" tabindex="0" aria-haspopup="dialog" data-project="excel-automation">
+                <div class="pc-img">
+                    <img class="pc-shot pc-shot--contain" src="images/Microsoft_Excel-Logo.wine.svg" alt="Microsoft Excel logo" loading="lazy">
+                </div>
+                <div class="pc-body">
+                    <span class="pc-tag pc-tag--label">Legacy Projects</span>
+                    <h3>Excel Automation &amp; Macro Development</h3>
+                    <p>A collection of VBA-powered Excel tools built to automate engineering workflows.</p>
+                </div>
+            </div>
+
+            <!-- ASEP Results Platform -->
+            <div class="project-card" role="button" tabindex="0" aria-haspopup="dialog" data-project="asep-results">
+                <div class="pc-img">
+                    <img class="pc-shot pc-shot--light" src="images/project_images/asep-project/asep_dark.png" alt="ΑΣΕΠ 1ΓΒ/2026 results platform home page" loading="lazy">
+                    <img class="pc-shot pc-shot--dark" src="images/project_images/asep-project/asep_light.png" alt="ΑΣΕΠ 1ΓΒ/2026 results platform home page" loading="lazy">
+                </div>
+                <div class="pc-body">
+                    <div class="pc-tags">
+                        <span class="pc-tag pc-tag--label">Personal Project</span>
+                        <span class="pc-tag pc-tag--label">Built with AI</span>
+                    </div>
+                    <h3>ΑΣΕΠ 1ΓΒ/2026 — Results Platform</h3>
+                    <p>An interactive platform for the results of the ASEP 1ΓΒ/2026 public-sector
+                      hiring exam, with candidate search, a map of positions, and statistics.</p>
+                </div>
+            </div>
+
+            <!-- Academic placeholder -->
+            <div class="project-card" role="button" tabindex="0" aria-haspopup="dialog" data-project="academic-project">
+                <div class="pc-img">
+                    <img class="pc-shot pc-shot--logo" src="images/project_images/IHU/MSc_WebIntelligence_IHU_logo.png" alt="MSc Web Intelligence, International Hellenic University logos" loading="lazy">
+                </div>
+                <div class="pc-body">
+                    <span class="pc-tag pc-tag--label">Academic</span>
+                    <h3>Academic Project</h3>
+                    <p>Details coming soon.</p>
+                </div>
+            </div>
+
         </div>
       </div><!-- /.pf-inner -->
     </section>
@@ -260,15 +334,35 @@
 
 
 
+    <!-- ── CONTACT ── -->
+    <section id="contact">
+      <div class="pf-inner">
+        <div class="section-eyebrow">Get in Touch</div>
+        <h2 class="section-title">Contact</h2>
+        <p class="section-intro">Have a project in mind or a question about my work? Feel free to contact me by email or on LinkedIn.</p>
+        <div class="contact-links">
+            <a href="mailto:alexveskos@gmail.com" class="btn-outline"><i class="fa-solid fa-envelope"></i> alexveskos@gmail.com</a>
+            <a href="mailto:alexveskos@traffiq.gr" class="btn-outline"><i class="fa-solid fa-envelope"></i> alexveskos@traffiq.gr</a>
+            <a href="https://www.linkedin.com/in/alex-veskos/" target="_blank" rel="noopener" class="btn-outline"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div><!-- /.pf-inner -->
+    </section>
+
     <!-- ── FOOTER ── -->
     <footer class="pf-footer">
       <div class="pf-inner pf-footer-inner">
-        <span>&copy; 2026 Alex Veskos. All rights reserved.</span>
+        <span>&copy; 2026 Alex Veskos. All rights reserved.<br>&copy; 2026 Αλέξανδρος Βέσκος. All rights reserved.</span>
         <a href="https://traffiq.gr" target="_blank" rel="noopener">traffiq.gr</a>
       </div>
     </footer>
 
 </div><!-- end #website-content -->
+
+<!-- ── PROJECT POP-UP ── -->
+<dialog class="pm" id="projectModal" aria-labelledby="pmTitle">
+    <button type="button" class="pm-close" id="pmClose" aria-label="Close">&times;</button>
+    <div class="pm-body" id="pmBody" tabindex="-1" autofocus></div>
+</dialog>
 
 <aside role="complementary" aria-label="Site utilities">
 
@@ -314,7 +408,7 @@ document.querySelectorAll('.pf-nav-links a[href^="#"]').forEach(link => {
 // ── DARK MODE TOGGLE ──
 document.addEventListener("DOMContentLoaded", () => {
     const modeSpan = document.querySelector('.pf-mode');
-    if (modeSpan) modeSpan.textContent = 'Light Mode';
+    if (modeSpan) modeSpan.textContent = 'Dark Mode';
 
     document.querySelector('.pf-toggle')?.addEventListener('click', function () {
         this.classList.toggle('toggle-light');
@@ -322,6 +416,167 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.toggle('theme-dark');
         if (modeSpan) modeSpan.textContent = document.body.classList.contains('theme-dark') ? 'Dark Mode' : 'Light Mode';
     });
+});
+</script>
+
+<script>
+// ── PROJECT POP-UPS ──
+const PROJECTS = {
+    'traffiq-platform': {
+        title: 'Traffiq.gr — Full-Stack Web Platform',
+        summary: 'The complete web platform behind Traffiq — designed and built end-to-end, from the public site to secure authentication, member dashboards, and an admin panel for managing the underlying data.',
+        overview: [
+            ['The Challenge', 'Councils and transport engineers needed a simple, secure way to access their traffic survey data online — without exchanging spreadsheets by email or requesting one-off reports.'],
+            ['The Solution', 'A full-stack platform built from the ground up: a public marketing site, Firebase-backed authentication with sign-up, login and password recovery, a member area with personalised dashboards per client, and an admin panel to manage the data behind it all.'],
+            ['The Impact', 'Clients get instant, self-serve access to their own survey data through a secure login, while the admin panel makes it possible to manage every client\'s data from one place.']
+        ],
+        detailsTitle: 'Key Features',
+        details: [
+            ['Authentication &amp; Onboarding', 'A complete sign-up and login flow built on Firebase Authentication — account creation, email verification, login, and a self-service password reset — so every client gets their own secure account.'],
+            ['Member Area &amp; Dashboards', 'Once logged in, clients land in a member area with interactive dashboards built around their own survey data — classified counts, speed, parking, queue and OD surveys — each with charts and summaries instead of raw spreadsheets.'],
+            ['Admin Panel', 'Behind the scenes, an admin panel gives full visibility over the platform — managing client accounts and reviewing the background survey data that feeds every member dashboard, all from one place.']
+        ],
+        tags: ['Firebase Auth', 'Firestore', 'JavaScript', 'Leaflet.js', 'Full-Stack'],
+        link: { href: 'https://traffiq.gr', label: 'Visit traffiq.gr' }
+    },
+    'civil-traffic-engineering': {
+        title: 'Civil &amp; Traffic Engineering',
+        summary: 'Highway design, junction design, traffic impact assessments, public realm schemes, road safety audits, and scheme development delivered for municipalities and clients across the UK.',
+        badge: 'Work in Progress',
+        overview: [
+            ['Design', 'Highway and junction design, from feasibility layouts through to detailed design, for local authority and private-sector schemes.'],
+            ['Assessment', 'Traffic impact assessments and road safety audits supporting planning applications and scheme approvals.'],
+            ['Public Realm', 'Public realm and streetscape improvements developed alongside traffic engineering and active travel objectives.']
+        ],
+        tags: ['Highway &amp; Junction Design', 'Traffic Impact Assessments', 'Road Safety Audits']
+    },
+    'video-analysis': {
+        title: 'Video Upload &amp; Analysis',
+        summary: 'A platform for uploading survey footage and running automated vehicle classification and count extraction — reducing manual processing time significantly.',
+        badge: 'To Be Updated',
+        overview: [
+            ['The Challenge', 'Manually reviewing hours of traffic survey footage to classify and count vehicles is slow, repetitive, and prone to human error.'],
+            ['The Solution', 'A web platform for uploading survey footage, with automated vehicle classification and count extraction built on top of it.'],
+            ['The Impact', 'Significantly reduced manual processing time, freeing up time for analysis and reporting instead of frame-by-frame counting.']
+        ],
+        tags: ['Video Processing', 'Vehicle Classification', 'Automated Counts']
+    },
+    'historical-map': {
+        title: 'Historical Survey Data Map',
+        summary: 'An interactive Leaflet map displaying all historical traffic surveys across Greece, with filters by type, classification, and date range, behind a Firebase Auth access layer.',
+        badge: 'Work in Progress',
+        overview: [
+            ['The Challenge', 'Years of historical traffic survey data across Greece were scattered across files with no easy way to browse or locate them geographically.'],
+            ['The Solution', 'An interactive Leaflet map plotting every survey by location, with filters for type, classification, and date range, secured behind Firebase Auth.'],
+            ['The Impact', 'A single, searchable view of historical survey coverage — making it far quicker to find and reuse existing data.']
+        ],
+        tags: ['Leaflet.js', 'Interactive Map', 'Firebase Auth']
+    },
+    'risk-assessment': {
+        title: 'Risk Assessment — Desktop &amp; Mobile App',
+        summary: 'A custom Microsoft Power Apps application for logging site attendance and assessing on-site risks, deployed across the Highways &amp; Traffic department at Transport for London and actively used by approximately 60 professionals.',
+        video: 'images/project_images/riskassessment/demo.mp4',
+        overview: [
+            ['The Challenge', 'Site teams needed a fast, reliable way to log attendance and flag on-site risks across highway and traffic sites — without relying on paper forms or disconnected spreadsheets.'],
+            ['The Solution', 'A Power Apps application built for desktop and mobile, with structured risk assessment forms and attendance logging, backed by Power Automate flows for centralised, auditable data.'],
+            ['The Impact', 'Deployed across the Highways &amp; Traffic department at Transport for London, now in active daily use by approximately 60 professionals in the field and office.']
+        ],
+        tags: ['Power Apps', 'Power Automate', 'Transport for London', '~60 active users']
+    },
+    'excel-automation': {
+        title: 'Excel Automation &amp; Macro Development',
+        summary: 'A collection of VBA-powered Excel tools built to automate engineering workflows — turning raw data entry and manual spreadsheet work into a single click.',
+        label: 'Legacy Projects',
+        overview: [
+            ['The Challenge', 'Recurring engineering tasks — reconciling financial data, maintaining registers, checking drawings — were being done manually in Excel, which was slow and left room for error.'],
+            ['The Solution', 'Purpose-built VBA macros that sit inside familiar Excel workbooks — one click imports raw data, runs the calculations, and lays out the result, with no extra software to learn.'],
+            ['The Impact', 'Hours of manual data entry and cross-checking reduced to seconds, with consistent, repeatable results across every project the tools are used on.'],
+            ['The Tools', 'Including a Drawing &amp; Document Register, data entry templates, reporting macros, and quality-checking tools developed for use in highways design environments.']
+        ],
+        detailsTitle: 'Case Studies',
+        details: [
+            ['Traffic Data Network Diagram', 'A single workbook where all the underlying traffic data lives on background tabs, while the front sheet displays a traffic network diagram built directly from that data — giving a clear, presentable overview without digging through raw numbers.'],
+            ['Budget &amp; Cost Tracker', 'A workbook that turns raw financial exports into an instant budget check. A single button imports the raw numbers, reconciles them against project cost codes, and returns how much budget is left to spend on a given project — no manual reconciliation needed.']
+        ],
+        tags: ['Excel', 'VBA', 'Macros', 'Automation']
+    },
+    'asep-results': {
+        title: 'ΑΣΕΠ 1ΓΒ/2026 — Results Platform',
+        summary: 'An interactive platform bringing together the results of the Greek ASEP 1ΓΒ/2026 public-sector hiring exam, so candidates can check results and placements in one place.',
+        label: ['Personal Project', 'Built with AI'],
+        overview: [
+            ['What It Does', 'Headline figures for candidates, appointees, positions and success rate, alongside a map of positions, search by registration number or name, and statistics on the results.'],
+            ['Data &amp; Privacy', 'An independent platform, not affiliated with ASEP, that processes public ASEP announcements. Identification numbers are shown masked.'],
+            ['Built with AI', 'Developed entirely through AI-assisted coding.'],
+            ['Credits', 'Inspired by Fokion\'s project for the PE (2ΓΒ/2026) results, which the original code comes from.']
+        ],
+        tags: ['Next.js', 'Vercel', 'Interactive Map', 'Statistics'],
+        link: { href: 'https://asep-1gb-2026-te.vercel.app/', label: 'Visit the platform' }
+    },
+    'academic-project': {
+        title: 'Academic Project',
+        summary: 'Details of this project are coming soon.',
+        label: 'Academic',
+        overview: [],
+        tags: []
+    }
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('projectModal');
+    const body = document.getElementById('pmBody');
+    const cards = [...document.querySelectorAll('.project-card')];
+    const ids = cards.map(card => card.dataset.project);
+
+    const sections = (items) => items.map(([title, text]) => `
+        <div class="pm-section">
+            <h3>${title}</h3>
+            <p>${text}</p>
+        </div>`).join('');
+
+    function showProject(index) {
+        const project = PROJECTS[ids[index]];
+        body.innerHTML = `
+            ${project.badge ? `<span class="pc-tag pc-tag--soon">${project.badge}</span>` : ''}
+            ${project.label ? `<div class="pc-tags">${[].concat(project.label).map(label => `<span class="pc-tag pc-tag--label">${label}</span>`).join('')}</div>` : ''}
+            <h2 class="pm-title" id="pmTitle">${project.title}</h2>
+            <p class="pm-summary">${project.summary}</p>
+            ${project.video ? `<video class="pm-video" controls playsinline preload="metadata" src="${project.video}"></video>` : ''}
+            ${sections(project.overview)}
+            ${project.details ? `<div class="pm-group-title">${project.detailsTitle}</div>${sections(project.details)}` : ''}
+            <div class="pc-chips">${project.tags.map(tag => `<span class="chip">${tag}</span>`).join('')}</div>
+            ${project.link ? `<a href="${project.link.href}" target="_blank" rel="noopener" class="btn-outline pm-link"><i class="fa-solid fa-up-right-from-square"></i> ${project.link.label}</a>` : ''}`;
+        body.scrollTop = 0;
+        history.replaceState(null, '', `#project-${ids[index]}`);
+        modal.showModal();
+        document.body.style.overflow = 'hidden';
+    }
+
+    cards.forEach((card, index) => {
+        card.addEventListener('click', () => showProject(index));
+        card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                showProject(index);
+            }
+        });
+    });
+
+    document.getElementById('pmClose').addEventListener('click', () => modal.close());
+
+    // Clicks on the dialog element itself land on the backdrop
+    modal.addEventListener('click', (e) => { if (e.target === modal) modal.close(); });
+
+    // Also fires on Esc; clearing the body stops any playing video
+    modal.addEventListener('close', () => {
+        body.innerHTML = '';
+        document.body.style.overflow = '';
+        history.replaceState(null, '', location.pathname + location.search);
+    });
+
+    // Open directly from a shared #project-… link
+    const linked = ids.indexOf(location.hash.replace('#project-', ''));
+    if (linked !== -1) showProject(linked);
 });
 </script>
 </body>
